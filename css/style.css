@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 4vmin;
+}
+
+body {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+#runningTotal {
+  grid-row: 1;
+  grid-column: 2;
+  text-align: center;
+  font-size: 10vmin;
+  padding-top: 15vmin;
+}
+
+input {
+  grid-row: 2;
+  border: 2px dashed black;
+  border-radius: 20px;
+  padding: 2vmin;
+  text-align: center;
+  font-size: 5vmin;
+}
+
+button {
+  grid-row: 2;
+  background-color: gainsboro;
+  color: black;
+  outline: none;
+  border-radius: 20px;
+  padding: 4vmin;
+  margin: 1vmin;
+}
+
+button:hover {
+  background-color: black;
+  color: gainsboro;
+}
