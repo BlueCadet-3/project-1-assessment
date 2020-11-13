@@ -38,7 +38,7 @@ function render() {
   if(runningTotal > 0) {
     totalEl.style.color = 'green';
     totalEl.textContent = '+' + runningTotal;
-  } else if(runningTotal < 0) {
+  } else if(runningTotal <= 0) {
     totalEl.style.color = 'red';
     totalEl.textContent = runningTotal;
   }
